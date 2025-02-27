@@ -41,9 +41,6 @@ Este proyecto consiste en el consumo de una API REST utilizando JavaScript y Fet
 🔹 Implementar paginación en la lista de productos
 🔹 Mejorar la interfaz de usuario
 
-## 📜 Licencia
-Este proyecto está bajo la licencia MIT.
-
 ---
 ✉ **Autor:** [JosueCast]  
 🔗 **Repositorio:** [GitHub](https://github.com/tu-usuario/tu-repositorio)
