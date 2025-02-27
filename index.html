@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Consumo de API</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/js.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            <strong>Consumo de Api</strong>
+          </a>
+        </div>
+      </nav>
+
+      <!-- container-fluid -->
+
+      <div class="container ">
+        <div class="card bg-dark" style="border-radius: 10px;">
+            <div class="card-tittle">
+                
+                
+            </div>
+            <div class="card-header">
+                <ul class="nav nav-pills card-header-pills">
+                  <li class="nav-item">
+                    <h3 class="text-white m-3">Productos</h3>
+                  </li>
+                  <li class="nav-item">
+                    <a type="button" href="#" onclick="crearProducto()" class="btn btn-primary mt-3">Agregar Productos</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            <div class="card-body">
+                
+
+                <table class="table table-striped table-dark table-hover">
+                    <thead>
+                        <tr>
+                          <th scope="col">Id</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Precio</th>
+                          <th scope="col">Stock</th>
+                          <th scope="col">Acciones</th>
+                        </tr>
+                      </thead>
+
+                      <tbody id="tabla-body">
+                        <!-- agregado mis datos desde api en c# -->
+
+                      </tbody>
+                  </table>
+            </div>
+          </div>
+      </div>
+
+       <!-- finalizaciond el container container-fluid -->
+
+      <!-- modales para ingresar datos -->
+       <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="labelModal">Editar Produtos</h1>
+                <a type="button" href="#" onclick="closeModall()"  class="btn-close"></a>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3" hidden>
+                            <label for="exampleInputEmail1" class="form-label">Id</label>
+                            <input type="text" class="form-control" id="id" aria-describedby="emailHelp">
+                          </div>
+
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nombre del Produtos</label>
+                          <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">precio del Produtos</label>
+                            <input type="text" class="form-control" id="precio" aria-describedby="emailHelp">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Cantida del Produtos</label>
+                            <input type="text" class="form-control" id="stock" aria-describedby="emailHelp">
+                          </div>
+                        <a id="btnModalEditar" type="button" href="#" onclick="update()"  class="btn btn-success">Editar Productos</a>
+                        <a id="btnModalCrear" type="button" href="#" onclick="insert()"  class="btn btn-primary">Guardar Productos</a>
+                      </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+            </div>
+        </div>
+       <!-- finalizando modales -->
+
+
+
+
+
+        <!-- footer -->
+
+        <footer class="bg-body-tertiary text-center text-lg-start  mt-auto">
+            <!-- Copyright -->
+            <div class="text-center p-3">
+            <strong>  © 2020 Copyright:
+                <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a></strong>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <script src="./js/app.js"></script>
+          <script src="./js/main.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
