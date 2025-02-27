@@ -43,5 +43,5 @@ Este proyecto consiste en el consumo de una API REST utilizando JavaScript y Fet
 
 ---
 ✉ **Autor:** [JosueCast]  
-🔗 **Repositorio:** [GitHub](https://github.com/tu-usuario/tu-repositorio)
+🔗 **Repositorio:** [GitHub](https://github.com/JosueCast)
 
