@@ -28,42 +28,6 @@ Este proyecto consiste en el consumo de una API REST utilizando JavaScript y Fet
 2. **Abrir el proyecto en un navegador**
    Puedes abrir el archivo `index.html` directamente o usar un servidor local como Live Server en VS Code.
 
-## 🔗 Endpoints de la API
-Asegúrate de que la API esté funcionando y que los endpoints sean los correctos.
-
-- **Obtener todos los productos**
-  ```sh
-  GET https://api.ejemplo.com/productos
-  ```
-- **Obtener un producto por ID**
-  ```sh
-  GET https://api.ejemplo.com/productos/{id}
-  ```
-- **Agregar un nuevo producto**
-  ```sh
-  POST https://api.ejemplo.com/productos
-  Content-Type: application/json
-  {
-    "nombre": "Producto 1",
-    "precio": 100,
-    "stock": 20
-  }
-  ```
-- **Actualizar un producto**
-  ```sh
-  PUT https://api.ejemplo.com/productos/{id}
-  Content-Type: application/json
-  {
-    "nombre": "Producto actualizado",
-    "precio": 150,
-    "stock": 30
-  }
-  ```
-- **Eliminar un producto**
-  ```sh
-  DELETE https://api.ejemplo.com/productos/{id}
-  ```
-
 ## 🛠 Uso del Proyecto
 1. Abre la página web.
 2. Se mostrará la lista de productos.
