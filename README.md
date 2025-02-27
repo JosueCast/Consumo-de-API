@@ -45,6 +45,6 @@ Este proyecto consiste en el consumo de una API REST utilizando JavaScript y Fet
 Este proyecto está bajo la licencia MIT.
 
 ---
-✉ **Autor:** [Tu Nombre]  
+✉ **Autor:** [JosueCast]  
 🔗 **Repositorio:** [GitHub](https://github.com/tu-usuario/tu-repositorio)
 
